@@ -54,6 +54,7 @@ from .utils.dataclasses import SageMakerDistributedType
 
 if is_torch_xla_available():
     import torch_xla.core.xla_model as xm
+    import torch_xla.runtime as xr
 
 if is_mlu_available(check_device=False):
     import torch_mlu  # noqa: F401
